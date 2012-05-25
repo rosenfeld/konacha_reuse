@@ -1,5 +1,8 @@
 require "konacha_reuse/version"
+require 'rails_sandbox_mocha_chai'
 
 module KonachaReuse
-  # Your code goes here...
+  class Engine < Rails::Engine
+    config.sandbox_assets.template = 'mocha_chai/runner'
+  end
 end

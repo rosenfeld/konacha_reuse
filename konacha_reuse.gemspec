@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "konacha_reuse"
   gem.require_paths = ["lib"]
   gem.version       = KonachaReuse::VERSION
+
+  gem.add_dependency 'rails_sandbox_mocha_chai'
 end
